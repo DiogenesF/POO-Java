@@ -1,0 +1,40 @@
+1 - Cite diferenças e similaridades entre sobrecarregamento e sobreposição. 
+	Diferencas:
+		Sobrecarregamento eh quando se declara o mesmo construtor mais de uma vez mudando apenas os parametros
+    		que ele recebe. Isso tambem pode ser utilizado em alguns metodos, como os metodos Sets, por exemplo
+	
+		Sobreposicao eh quando uma classe estende outra e nessa clase eh criado o mesmo metodo que ja existe 
+	   	na classe herdada (com o mesmo nome) porem alterada com algumas caracteristicas especificas da subclasse
+		
+	Similaridades:
+		Ambas repetem nomes de metodos ou construtores fazendo algumas ligeiras mudancas no funcionamento
+		do novo metodo ou construtor que foi sobrecarregado ou sobreposto.
+	
+2 - Qual a diferença de vinculação estática para vinculação dinâmica?  
+	Vinculacao estatica eh quando, em tempo de compilacao, o compilador ja sabe a partir de qual classe
+	um metodo especifico sera chamado. Enquanto que na vinculacao dinamica isso nao eh possivel,
+	pois isso depende de uma escolha do usuario, entao o compilador so descobre a partir de qual classe
+	certo metodo sera chamado em tempo de execucao.
+
+3 - Que relação o polimorfismo tem com a herança, o sobrecarregamento e a vinculação dinâmica? 
+	Eh necessario que haja heranca para que haja polimorfismo, pois sem heranca, o compilador nao precisara
+	ter que saber a partir de qual classe um metodo esta sendo chamado, tendo em vista que nenhuma classe
+	herda de outra.
+	
+	O sobrecarregamento eh o ato de criar construtores ou metodos com o mesmo nome, porem recebendo parametros
+	diferentes, qual desses construtores ou metodos sera chamado so sera conhecido quando o usuario estiver
+	utilizando o programa, ou seja, em tempo de execucao, e essa escolha de metodo somente em tempo de 
+	execucao, eh uma chamada polimorfica.
+	
+	Vinculacao dinamica eh quando o compilador so descobre a partir de qual classe certo metodo sera chamado
+	em tempo de execucao, ou seja, acontecerao chamadas polimorficas.
+	
+	
+4 - É verdade que toda relação de herança entre duas classes poderia ser reescrita como uma relação 
+de composição (ou agregação)?  Se sim, dê exemplo e explique qual a inconveniência de se fazer isto?
+	Sim. Se voce possui uma classe Pessoa e uma Funcionario, eh possivel realizar uma relacao de agregacao
+	entre elas, assim, Pessoa seria um campo de Funcionario que guardaria as informacoes dos campos
+	que existem em Pessoa. A inconveniencia de se fazer isso eh que havera um desperdicio de codigo,
+	tendo em vista que nao sera possivel acessar os metodos da classe Pessoa atraves de Funcionario,
+	entao todos os metodos daquela classe teriam que ser reescritos novamente na classe Funcionario,
+	e o uso de heranca faria com que esses codigos pudessem ser reaproveitados.
