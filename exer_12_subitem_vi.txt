@@ -1,0 +1,6 @@
+RESPOSTA DA 12, SUBITEM (vi):
+		Para todas as atribuicoes tentadas, as unicas que darao certo sao as que sao feitas da seguinte maneira:
+		Quando se atribui a uma superclasse uma instancia de sua subclasse. Por exemplo:
+		Pessoa pes = new Pessoa();
+		Funcionario fun = new Funcionario();
+		A atribuicao 'pes = fun' funciona, mas 'fun = pes' nao. Pois Funcionario eh uma subclasse de Pessoa.
