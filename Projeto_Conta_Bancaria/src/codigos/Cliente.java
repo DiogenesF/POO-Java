@@ -4,8 +4,8 @@ import java.util.List;
 
 public class Cliente {
 	private String nome;
-	private String CPF;			//O cliente possui essas informacoes, e a senha que sera utilizada quando implementarmos o banco
-	private double saldo;		//de dados. As operacoes realizadas por este cliente sao armazenadas em uma linkedlist.
+	private String CPF;			
+	private double saldo;		
 	private String senha;	
 	private Data data_nasc;
 	private List<Operacoes> operacoes = new LinkedList<Operacoes>();
