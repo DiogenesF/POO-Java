@@ -53,8 +53,8 @@ public class Cliente {
 	}
 	
 	public void insere(String _CPF, Data _data, double _valor, TipoOperacao _operacao, int _tipo_conta) {
-		Operacoes novo = new Operacoes(_CPF, _data, _valor, _operacao, _tipo_conta); //Quando uma nova operacao eh realizada, esse metodo eh 
-		this.operacoes.add(novo);										//chamado, e ele adiciona a nova operacao a linkedlist.
+		Operacoes novo = new Operacoes(_CPF, _data, _valor, _operacao, _tipo_conta);  
+		this.operacoes.add(novo);							
 	}
 	public String toString() {
 		StringBuilder info = new StringBuilder();
