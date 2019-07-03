@@ -110,7 +110,7 @@ public class Transferir {
 		JButton btnTransferir = new JButton("Transferir");
 		btnTransferir.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				int marcador = 0;         //uma flag para indicar que, se a conta a transferir nao existe, volta para tela anterior
+				
 				double valor_na_conta_atual, valor_na_conta_transferir, novo_saldo_conta_atual, novo_saldo_conta_transferir;
 				String valor_digitado = textValor.getText();
 				double valor_transferido = Double.parseDouble(valor_digitado);
