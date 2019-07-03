@@ -130,7 +130,7 @@ public abstract class Conta {
 	 * 
 	 * @throws Exception para caso a data não esteja nos parametros desejados
 	 */
-	public static void incrementaDataHoje() throws Exception {	//Metodo para fazer os dias (da data de hoje) passarem
+	public static void incrementaDataHoje() throws Exception {	
 		if (Data.isDataValida(Conta.data_hoje.getDia()+1, Conta.data_hoje.getMes(), Conta.data_hoje.getAno())) {
 			Conta.data_hoje = new Data(Conta.data_hoje.getDia()+1, Conta.data_hoje.getMes(), Conta.data_hoje.getAno());
 		}
