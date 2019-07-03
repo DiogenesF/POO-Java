@@ -261,6 +261,7 @@ public class Data {
 	 * e tem um retorno para um toString mais completo para ser informado 
 	 * ao Usuario os valores do Dia, Mês e Ano
 	 * 
+	 * @param _data Data informada ao Banco de Dados em String
 	 * @return retorna uma StringBuilder para uma outra toString mais completa
 	 */
 	public static String formatDataFromSQL(String _data) {
