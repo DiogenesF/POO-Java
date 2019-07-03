@@ -162,7 +162,7 @@ public class Cliente {
 		info.append("\nCPF: " + this.getCPF());
 		info.append("\nData de nascimento: " + this.getDataNasc());
 		info.append("\nSaldo: " + this.getSaldo());
-		info.append("\nOperacoes da conta: " + this.getOperacoes());
+		info.append("\nOperacoes do cliente: " + this.getOperacoes());
 		return info.toString();
 	}
 }
